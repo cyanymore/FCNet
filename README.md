@@ -55,4 +55,5 @@ python test_index.py
 ![FLIR](img/FLIR.png)
 
 ## Acknowledgments
-This code heavily borrowes from [SGA]([https://github.com/HangyingLiao/MUGAN](https://github.com/kunkun0w0/SGA)).
+This code heavily borrowes from [SGA](https://github.com/HangyingLiao/MUGAN](https://github.com/kunkun0w0/SGA).
+
