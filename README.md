@@ -10,10 +10,26 @@ Reference-Based Infrared Image Colorization via Feature Enhancement and Context 
 - visdom
 
 ## Pretrianed
-We provide the pretrained model: [Google](https://drive.google.com/drive/folders/1KiL0p8NZdV0YyyOdt4Z2TCOy_jz_i0w3)
+We provide the pretrained model: [Google](https://drive.google.com/drive/folders/1SW3y-mC6Sib1bZ0xPqd3GpQSeEmtjTIZ)
 
-## 
-config.yml 
+## Setup
+#config.yml 
+  EPOCH
+  BATCH_SIZE
+  G_LR
+  D_LR
+  LAMBDA_G_FAKE
+  LAMBDA_G_RECON
+  LAMBDA_G_SYTLE
+  LAMBDA_G_PERCEP
+  LAMBDA_D_FAKE
+  LAMBDA_D_REAL
+  TRAIN_DIR
+
+#dataloder.py
+  self.img_dir = '/home/cust/cust_data/cy/dataset/RefDayDataset/KAIST/testA'
+  self.skt_dir = '/home/cust/cust_data/cy/dataset/RefDayDataset/KAIST/testB'
+  self.data_list = glob.glob(os.path.join(self.img_dir, '*.jpg'))
 
 
 ## Trian
@@ -34,9 +50,5 @@ python test_index.py
 ### FLIR dataset
 ![FLIR](img/FLIR.png)
 
-
-## Note
-We only uploaded the paired strategy, the remaining strategies can be found in [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [CUT](https://github.com/taesungp/contrastive-unpaired-translation).
-
 ## Acknowledgments
-This code heavily borrowes from [MUGAN](https://github.com/HangyingLiao/MUGAN).
+This code heavily borrowes from [SGA]([https://github.com/HangyingLiao/MUGAN](https://github.com/kunkun0w0/SGA)).
