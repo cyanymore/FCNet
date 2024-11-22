@@ -13,7 +13,8 @@ Reference-Based Infrared Image Colorization via Feature Enhancement and Context 
 We provide the pretrained model: [Google](https://drive.google.com/drive/folders/1SW3y-mC6Sib1bZ0xPqd3GpQSeEmtjTIZ)
 
 ## Setup
-#config.yml 
+```
+config.yml 
   EPOCH
   BATCH_SIZE
   G_LR
@@ -25,12 +26,15 @@ We provide the pretrained model: [Google](https://drive.google.com/drive/folders
   LAMBDA_D_FAKE
   LAMBDA_D_REAL
   TRAIN_DIR
+```
 
-#dataloder.py
+```
+dataloder.py
   self.img_dir = '/home/cust/cust_data/cy/dataset/RefDayDataset/KAIST/testA'
   self.skt_dir = '/home/cust/cust_data/cy/dataset/RefDayDataset/KAIST/testB'
   self.data_list = glob.glob(os.path.join(self.img_dir, '*.jpg'))
-
+```
+Note：Modify according to your needs
 
 ## Trian
 ```
