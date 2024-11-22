@@ -9,6 +9,10 @@ Reference-Based Infrared Image Colorization via Feature Enhancement and Context 
 - dominate
 - visdom
 
+## Dataset
+We provide the [KAIST](https://github.com/SoonminHwang/rgbt-ped-detection) dataset and the [FLIR](https://www.flir.com/oem/adas/adas-dataset-form) dataset link.
+
+
 ## Pretrianed
 We provide the pretrained model: [Google](https://drive.google.com/drive/folders/1SW3y-mC6Sib1bZ0xPqd3GpQSeEmtjTIZ)
 
